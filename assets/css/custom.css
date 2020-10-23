@@ -1,0 +1,65 @@
+.spin {
+    -webkit-animation: spin .7s infinite linear;
+    -moz-animation: spin .7s infinite linear;
+    -o-animation: spin .7s infinite linear;
+    animation: spin .7s infinite linear;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin:50% 50%;
+    -ms-transform-origin:50% 50%; /* IE 9 */
+}
+                        
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+                        
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+                        
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ul .star-rating {
+    list-style-type: none;
+}
+
+ul .star-rating > li {
+    display: inline-block;
+}
+
+.msg-send, .msg-reply {
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.media-body {
+    margin-bottom: 0px;
+}
+
+p.msg-send {
+    margin-bottom: 0.2rem;
+}
+
+.msg-reply {
+    border-radius: 6px 0px 15px 6px;
+}
+
+.msg-send {
+    border-radius: 0px 6px 6px 15px;
+}
